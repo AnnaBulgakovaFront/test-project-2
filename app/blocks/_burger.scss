@@ -1,0 +1,45 @@
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    &__line {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 2px;
+        width: 100%;
+        background-color: #ffffff;
+        transition: $transition;
+    }
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #ffffff;
+        transition: $transition;
+    }
+    &::after {
+        top: auto;
+        bottom: 0;
+    }
+    &--close {
+        &::before {
+            top: 50%;
+            transform: translateY(-50%) rotate(45deg);
+        }
+        &::after {
+            bottom: 50%;
+            transform: translateY(50%) rotate(-45deg);
+        }
+        .burger {
+            &__line {
+                opacity: 0;
+            }
+        }
+    }
+}

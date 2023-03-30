@@ -1,0 +1,27 @@
+.input-file {
+    width: 100%;
+    padding: 12px 10px;
+    background: #FFFFFF;
+    border: 2px solid #3E9CDC;
+    border-radius: 3px;
+    color: $text-dark-color;
+    cursor: pointer;
+    &__label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+    &__icon {
+        width: 17.14px;
+        height: 20px;
+        background-image: url('../img/input-file.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__input {
+        display: none;
+    }
+}

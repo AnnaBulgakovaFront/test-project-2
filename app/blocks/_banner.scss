@@ -1,0 +1,26 @@
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 130px 0;
+    min-height: 850px;
+    background-position: center;
+    background-size: cover;
+    color: $text-dark-color;
+    &__wrapper {
+        max-width: 780px;
+    }
+    &__p, &__ul {
+        font-size: 20px;
+    }
+    &__p {
+        font-weight: 700;
+    }
+    &__content {
+        margin-bottom: 80px;
+    }
+    &__buttons-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 30px;
+    }
+}

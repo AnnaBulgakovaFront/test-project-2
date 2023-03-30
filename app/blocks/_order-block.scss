@@ -1,0 +1,11 @@
+.order-block {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__content {
+        margin-bottom: 80px;
+    }
+    &__steps-work {
+        margin-bottom: 80px;
+    }
+}

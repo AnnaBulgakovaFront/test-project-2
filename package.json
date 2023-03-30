@@ -1,0 +1,36 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "test-project",
+  "main": "index.html",
+  "scripts": {
+    "watch": "gulp watch:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaBulgakovaFront/test-project-1.git"
+  },
+  "author": "Anna Bulgakova",
+  "license": "ISC",
+  "homepage": "https://github.com/AnnaBulgakovaFront/test-project-1",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.29.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^1.5.0"
+  },
+  "dependencies": {
+    "custom-select": "^1.1.15"
+  }
+}

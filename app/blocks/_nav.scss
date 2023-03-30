@@ -1,0 +1,52 @@
+.nav {
+    position: relative;
+    z-index: 100;
+    transition: $transition;
+    @media screen and (max-width: 767px) {
+        transform: translateX(100%);
+        position: fixed;
+        padding: 0 15px;
+        top: 92px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 92px);
+        background: rgba(16, 16, 29, 0.9);
+        overflow: auto;
+
+    }
+    &--open {
+        @media screen and (max-width: 767px) {
+            transform: translateX(0);
+        }
+    }
+    &__list {
+        display: flex;
+        gap: 20px 60px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @media screen and (max-width: 1023px) {
+            gap: 15px;
+        }
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    &__item {
+        padding: 0;
+        &::before {
+            display: none;
+        }
+    }
+    &__link {
+        color: $nav-link-color;
+        text-decoration: none;
+        transition: $transition;
+        &:hover {
+            color: $nav-link-hover-color;
+        }
+        &--active {
+            color: $nav-link-active-color;
+        }
+    }
+}
