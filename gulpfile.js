@@ -21,7 +21,7 @@ let cssLibs = [
 ]
 
 function clean() {
-  return del('dist');
+  return del('docs');
 }
 
 function style() {
@@ -30,7 +30,7 @@ function style() {
     .pipe(concat('libs.css'))
     .pipe(cssmin())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/css')),
+    .pipe(gulp.dest('docs/css')),
 
   gulp.src('app/sass/style.scss')
     .pipe(sourcemaps.init())
@@ -39,7 +39,7 @@ function style() {
     .pipe(sourcemaps.write('.'))
     .pipe(cssmin())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('docs/css'))
     .on('end', browserSync.reload);
 }
 
@@ -49,13 +49,13 @@ function html() {
     .pipe(rename({
       dirname: ""
     }))
-    .pipe(gulp.dest('dist/'))
+    .pipe(gulp.dest('docs/'))
     .on('end', browserSync.reload);
 }
 
 function fontsTransfer() {
   return gulp.src('app/fonts/*.*')
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('docs/fonts'))
 }
 
 function bundleJS() {
@@ -63,32 +63,32 @@ function bundleJS() {
     .pipe(concat('libs.js'))
     .pipe(jsmin()) 
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('docs/js'))
     .on('end', browserSync.reload),
 
   gulp.src(['app/blocks/**/*.js', 'app/js/main.js'])
     .pipe(concat('scripts.js'))
     .pipe(jsmin())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('docs/js'))
     .on('end', browserSync.reload);
 };
 
 // function favicons() {
 //   return gulp.src('app/*.ico')
-//       .pipe(gulp.dest('dist'));
+//       .pipe(gulp.dest('docs'));
 // }
 
 // function favicons() {
 //   return gulp.src('app/favicon/*.*')
-//       .pipe(gulp.dest('dist/favicon'));
+//       .pipe(gulp.dest('docs/favicon'));
 // }
 
 
 function imageTransfer() {
   return gulp.src('app/img/*.*')
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest('docs/img'))
 }
 
 function icons() {
@@ -116,7 +116,7 @@ function icons() {
 function watch() {
   browserSync.init({
     server: {
-      baseDir: './dist',
+      baseDir: './docs',
     }
   });
   gulp.watch('app/**/*.scss', style);
