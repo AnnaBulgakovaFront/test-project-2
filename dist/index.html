@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoremIpsum.Net</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <a href="#" class="header__logo logo">
+                    <img src="img/logo.svg" alt="LoremIpsum.Net logo">
+                </a>
+                <div class="header__burger burger js-burger">
+                    <div class="burger__line"></div>
+                </div>
+                <nav class="header__nav nav js-nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <span href="#" class="nav__link nav__link--active">Бизнес</span>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Цены</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Оформить заказ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="banner" style="background-image: url('img/banner-img.png');">
+            <div class="container">
+                <div class="banner__wrapper">
+                    <div class="banner__content">
+                        <h1 class="h1"><span class="h1__accent">Lorem ipsum</span> dolor sit amet consectetur <span class="h1__accent">adipiscing</span></h1>
+                        <p class="banner__p">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+                        <ul class="banner__ul">
+                            <li>Totam rem aperiam eaque ipsa</li>
+                            <li>Sit voluptatem accusantium doloremque laudantium</li>
+                            <li>Sed ut perspiciatis, unde omnis iste natus error</li>
+                        </ul>
+                    </div>
+                    <div class="banner__buttons-block">
+                        <a href="#" class="btn btn--primary">
+                            <span>заказать</span>
+                        </a>
+                        <a href="#" class="btn btn--secondary">
+                            <span>подробнее</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section order-block" style="background-image: url('img/bg-order.png');">
+            <div class="container">
+                <h2 class="h2">Оформление  <span class="h2__accent">Заказа</span></h2>
+                <div class="order-block__content content">
+                    <p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+                </div>
+                <div class="steps-work order-block__steps-work">
+                    <div class="steps-work__item">
+                        <div class="steps-work__item-img" style="background-image: url('img/step-work-1.svg');"></div>
+                        <div class="steps-work__item-content">
+                            <span>Lorem ipsum dolor sit amet</span>
+                        </div>
+                    </div>
+                    <div class="steps-work__item">
+                        <div class="steps-work__item-img" style="background-image: url('img/step-work-2.svg');"></div>
+                        <div class="steps-work__item-content">
+                            <span>Сonsecteturadipiscing elit</span>
+                        </div>
+                    </div>
+                    <div class="steps-work__item">
+                        <div class="steps-work__item-img" style="background-image: url('img/step-work-3.svg');"></div>
+                        <div class="steps-work__item-content">
+                            <span>Sed do eiusmod tempor</span>
+                        </div>
+                    </div>
+                    <div class="steps-work__item">
+                        <div class="steps-work__item-img" style="background-image: url('img/step-work-4.svg');"></div>
+                        <div class="steps-work__item-content">
+                            <span>Esse cillum doloreeu fugiat</span>
+                        </div>
+                    </div>
+                    <div class="steps-work__item">
+                        <div class="steps-work__item-img" style="background-image: url('img/step-work-5.svg');"></div>
+                        <div class="steps-work__item-content">
+                            <span>Excepteur sint occaecat cupidatat non proident</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="form">
+                    <div class="form__inputholders-wrapper">
+                        <div class="form__inputholder">
+                            <select name="type" class="select js-select">
+                                <option disabled selected>Выберите тип системы</option>
+                                <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                                <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                                <option value="Et harum quidem">Et harum quidem</option>
+                                <option value="Temporibus autem">Temporibus autem</option>
+                                <option value="Itaque earum rerum">Itaque earum rerum</option>
+                                <option value="Sed ut perspiciatis 1">Sed ut perspiciatis 1</option>
+                                <option value="Nemo enim ipsam 1">Nemo enim ipsam 1</option>
+                                <option value="Et harum quidem 1">Et harum quidem 1</option>
+                                <option value="Temporibus autem 1">Temporibus autem 1</option>
+                                <option value="Itaque earum rerum 1">Itaque earum rerum 1</option>
+                            </select>
+                        </div>
+                        <div class="form__inputholder">
+                            <input type="email" name="email" placeholder="Ваш e-mail" class="input error">
+                        </div>
+                        <div class="form__inputholder">
+                            <input type="text" name="name" placeholder="Ваше имя" class="input">
+                        </div>
+                        <div class="form__inputholder form__inputholder--range range js-range">
+                            <label class="range__label">
+                                <span>Sed ut perspiciatis, unde omnis iste natus</span>
+                                <span class="range__output"><span class="js-range-output">75</span>%</span>
+                            </label>
+                            <input type="range" name="range" min="1" max="100" value="75" class="range__input js-range-input">
+                        </div>
+                        <div class="form__inputholder input-file js-input-file-wrapper">
+                            <label for="input-file" class="input-file__label">
+                                <div class="input-file__icon"></div>
+                                <span class="input-file__text js-input-file-text">Прикрепить файл</span>
+                            </label>
+                            <input type="file" name="file" id="input-file" class="input-file__input js-input-file" placeholder="Прикрепить файл">
+                        </div>
+                    </div>
+                    <button class="btn btn--primary form__button">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__col footer__col--copyright">
+                    <span class="footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.</span>
+                </div>
+                <div class="footer__col footer__col--pay">
+                    <div class="footer__pay-item">
+                        <div class="footer__pay-item-img" style="background-image: url('img/qiwi.svg');"></div>
+                        <span class="footer__pay-item-title">Qiwi wallet</span>
+                    </div>
+                    <div class="footer__pay-item">
+                        <div class="footer__pay-item-img" style="background-image: url('img/yandexMoney.svg');"></div>
+                        <span class="footer__pay-item-title">Yandex Money</span>
+                    </div>
+                    <div class="footer__pay-item">
+                        <div class="footer__pay-item-img" style="background-image: url('img/webMoney.svg');"></div>
+                        <span class="footer__pay-item-title">Web Money</span>
+                    </div>
+                </div>
+                <div class="footer__col footer__col--contacts">
+                    <a href="mailto:info@ipsum228.com" class="footer__contact-item">
+                        <div class="footer__contact-item-img" style="background-image: url('img/email.svg');"></div>
+                        <span class="footer__contact-item-title">info@ipsum228.com</span>
+                    </a>
+                    <a href="#" class="footer__contact-item">
+                        <div class="footer__contact-item-img" style="background-image: url('img/vk.svg');"></div>
+                        <span class="footer__contact-item-title">Мы вконтакте</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/libs.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+</html>
